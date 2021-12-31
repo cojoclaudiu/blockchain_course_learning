@@ -1,0 +1,26 @@
+{
+  "name": "udemy_blockchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "node1": "nodemon --watch dev -e js dev/networkNode.js 3001 http://localhost:3001",
+    "node2": "nodemon --watch dev -e js dev/networkNode.js 3002 http://localhost:3002",
+    "node3": "nodemon --watch dev -e js dev/networkNode.js 3003 http://localhost:3003",
+    "node4": "nodemon --watch dev -e js dev/networkNode.js 3004 http://localhost:3004",
+    "node5": "nodemon --watch dev -e js dev/networkNode.js 3005 http://localhost:3005",
+    "node6": "nodemon --watch dev -e js dev/networkNode.js 3006 http://localhost:3006",
+    "node7": "nodemon --watch dev -e js dev/networkNode.js 3007 http://localhost:3007",
+    "chain": "npm run node1 & npm run node2 & npm run node3 & npm run node4 & npm run node5 & npm run node6 & npm run node7"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "uuid": "^8.3.2"
+  }
+}
